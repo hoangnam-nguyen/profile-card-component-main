@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-primary-cyan: hsl(185, 75%, 39%);
+    --clr-primary-blue: hsl(229, 23%, 23%);
+    --clr-primary-gray: hsl(227, 10%, 46%);
+    --clr-neutral-gray: hsl(0, 0%, 59%);
+
+    --fs-large: 1.8rem;       /* name and stats */
+    --fs-medium: 1.6rem;
+    --fs-small: 1.4rem;
+
+    --ff: 'Kumbh Sans', sans-serif;
+
+    --fw-light: 400;
+    --fw-bold: 700;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background:
+        url('images/bg-pattern-bottom.svg') 20rem 25rem no-repeat,
+        url('images/bg-pattern-top.svg') -75rem -60rem no-repeat;
+    background-color: var(--clr-primary-cyan);
+    background-blend-mode: overlay;
+}
+
+@media only screen and (min-width: 37.5rem) {
+    body {
+        background:
+            url('images/bg-pattern-bottom.svg') 65rem 35rem no-repeat,
+            url('images/bg-pattern-top.svg') -30rem -50rem no-repeat;
+        background-color: var(--clr-primary-cyan);
+        background-blend-mode: overlay;
+    }
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 35rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    line-height: 2rem;
+}
+
+.card-img {
+    width: 35rem;
+    height: 15rem;
+    background-image: url('images/bg-pattern-card.svg');
+}
+
+.profile-img {
+    position: absolute;
+    top: 9rem;
+    width: 12rem;
+    height: 12rem;
+    background: url('images/image-victor.jpg') center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.info {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info::after {
+    content: '';
+    display: block;
+    width: 35rem;
+    height: 1.5px;
+    background-color: var(--clr-neutral-gray);
+    opacity: 0.25;
+}
+
+.stats {
+    margin-top: 1.5rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+span {
+    font-weight: var(--fw-light);
+    color: var(--clr-primary-gray);
+}
+
+h1 {
+    font-family: var(--ff);
+    text-align: center;
+    font-size: var(--fs-large);
+    color: var(--clr-primary-blue);
+}
+
+.info p {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-medium);
+    color: var(--clr-primary-gray);
+}
+
+.stats span {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-small);
+}
