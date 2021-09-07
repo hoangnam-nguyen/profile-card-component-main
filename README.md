@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/hoangnam-nguyen/stats-preview-card-component-main](https://github.com/hoangnam-nguyen/stats-preview-card-component-main)
-- Live Site URL: [https://hoangnam-nguyen.github.io/stats-preview-card-component-main/](https://hoangnam-nguyen.github.io/stats-preview-card-component-main/)
+- Solution URL: [https://github.com/hoangnam-nguyen/profile-card-component-main](https://github.com/hoangnam-nguyen/profile-card-component-main)
+- Live Site URL: [https://hoangnam-nguyen.github.io/profile-card-component-main/](https://hoangnam-nguyen.github.io/profile-card-component-main/)
 
 ## My process
 
